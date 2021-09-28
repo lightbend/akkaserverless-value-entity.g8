@@ -11,3 +11,4 @@ sbt new lightbend/akkaserverless-value-entity.g8
 ```
 
 After that, follow the [README.md](src/main/g8/README.md) in the generated project.
+ 
