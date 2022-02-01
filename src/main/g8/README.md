@@ -72,13 +72,16 @@ sbt -Ddocker.username=mary docker:publish
 Refer to [Configuring registries](https://developer.lightbend.com/docs/akka-serverless/projects/container-registries.html)
 for more information on how to make your Docker image available to Akka Serverless.
 
-Finally you can use the [Akka Serverless Console](https://console.akkaserverless.com)
-to create a project and then deploy your service into the project
-through the [akkasls](https://developer.lightbend.com/docs/akka-serverless/akkasls/using-cli.html) CLI:
+You can now deploy your service through the [akkasls](https://developer.lightbend.com/docs/akka-serverless/akkasls/using-cli.html) CLI:
 
 ```
-$ akkasls projects new my-project
-$ akkasls config set project my-project
+$ akkasls auth login
+```
+
+If this is your first time using Akka Serverless, this will let you
+register an account, create your first project and set it as the default.
+
+```
 $ akkasls services deploy \
     my-service \
     my-container-uri/container-name:tag-name
