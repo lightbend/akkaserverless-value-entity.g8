@@ -81,6 +81,8 @@ $ akkasls auth login
 If this is your first time using Akka Serverless, this will let you
 register an account, create your first project and set it as the default.
 
+Now:
+
 ```
 $ akkasls services deploy \
     my-service \
